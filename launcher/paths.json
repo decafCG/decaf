@@ -1,0 +1,22 @@
+{
+    "tempdata": "C:\\decaf\\tempData\\",
+    "tshark": "C:\\Program Files\\Wireshark\\",
+    "dataset": "C:\\decaf\\dataset\\",
+    "chromedata": "C:\\chromium_dataset\\",
+    "my_ip": "192.168.0.135",
+    "files_to_move": {
+        "tempdata": "C:\\decaf\\tempData\\",
+        "frameBuffer2": "C:\\chrome_dataset\\frameBuffer2.txt",
+        "remoteEstimatorProxy": "C:\\chrome_dataset\\remoteEstimatorProxy.txt",
+        "streamStatisticianImpl": "C:\\chrome_dataset\\streamStatisticianImpl.txt",
+        "videoReceiveStream": "C:\\chrome_dataset\\videoReceiveStream.txt",
+        "connection": "C:\\chrome_dataset\\connection.txt",
+        "rtcStatsCollector": "C:\\chrome_dataset\\rtcStatsCollector.txt"
+    },
+    "ffmpeg": {
+        "acv": "C:\\decaf\\ffmpegCmds\\acv.txt",
+        "crew": "C:\\decaf\\ffmpegCmds\\crew_new.txt",
+        "crew2": "C:\\decaf\\ffmpegCmds\\crew2.txt",
+        "fc5": "C:\\decaf\\ffmpegCmds\\fc5.txt"
+    }
+}
