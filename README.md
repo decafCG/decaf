@@ -21,6 +21,11 @@ Inside the _C:/chromium/src/out/_ folder, extract the downloaded chromium. The e
 
 To run chromium,  open the terminal Windows PowerShell in administrator mode and change directory to _C:/chromium/src/_. Then run the command `./out/Default/chrome.exe --no-sandbox`. This will launch chromium. Browse gaming platform such as Google Stadia and play the game.
 
+### Launcher Setup
+Laucher runs various components of Decaf such as game bot, FFmpeg, wireshark to collect the data.
+
+Download or git clone decaf from github in your C directory. It should look like C:/decaf
+
 
 
 
