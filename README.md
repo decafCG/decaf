@@ -19,7 +19,7 @@ Please install the following:
 4. Install FFmpeg for windows by following instructions [here](https://www.gyan.dev/ffmpeg/builds/)
 5. Install WireShark from [here](https://www.wireshark.org/download.html)
 
-Make sure that the WireShark is installed in direcotory _C:\Program Files\Wireshark\_. O"tshark".herwise, find the directory where WireShark is installed and update it in the _launcher\paths.json_ by replacing the value of key "tshark".
+Make sure that the WireShark is installed in direcotory _C:\Program Files\Wireshark\_. Otherwise, find the directory where WireShark is installed and update it in the _launcher\paths.json_ by replacing the value of key "tshark".
 
 ### Creating required directories
 Go the _C:\decaf\_ directory and run the script create_directories.py. This will create all the required directories.
