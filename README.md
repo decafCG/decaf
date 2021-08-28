@@ -17,16 +17,10 @@ In the C directory of your computer, create two folders:
 2) C:/chromium/src/out/
 
 
-Inside the ‘out’ folder, extract the downloaded chromium. The extracted files will be in folder titled ‘Default’.
+Inside the _C:/chromium/src/out/_ folder, extract the downloaded chromium. The extracted files will be in folder titled _Default_.
 
-To run chromium,  open the terminal Windows PowerShell in administrator mode and change directory to C:/chromium/src/. Then run following command:
+To run chromium,  open the terminal Windows PowerShell in administrator mode and change directory to _C:/chromium/src/_. Then run the command `<./out/Default/chrome.exe --no-sandbox>`. This will launch chromium. Browse gaming platform such as Google Stadia and play the game.
 
-./out/Default/chrome.exe --no-sandbox
-
-This will launch chromium. Browse gaming platform such as Google Stadia and play the game.
-
-I think you should use an
-`<addr>` element here instead.
 
 
 
