@@ -35,7 +35,7 @@ First step is to download or git clone decaf from github in your C directory. It
   Launcher runs various components of Decaf such as game bot, FFmpeg, wireshark to collect the data.
   Once the game is running in chromium, e.g., Far Cry 5 in Stadia, run the launcher.py to run to start the game bot and start collecting data. The usage is as follows:
 
-  Usage: python3 launcher.py <platform> <game> <total_runtime_min> <bot_runtime_min> <folder_name>
+  _Usage: python3 launcher.py platform game total_runtime_min bot_runtime_min folder_name_
 
   For example, if command `python3 launcher.py stadia fc5 10 8 testing` is run, it implies that fc5 will be played by game bot on stadia for 8 minutes and the it will launcher.py stop running after 10 minutes. The data collected will be stored in folder named _test_ which will be present at C:\decaf\dataset\stadia\test. The _bot_runtime_min_ can be less than or equal to _total_runtime_min_.
 
