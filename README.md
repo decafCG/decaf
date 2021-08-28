@@ -29,7 +29,7 @@ First step is to download or git clone decaf from github in your C directory. It
 
   Inside the C:\chromium\src\out\ that is already created, extract the downloaded chromium. The extracted files will be in folder titled _Default_.
 
-  To run chromium, open the Windows PowerShell in administrator mode and change directory to C:\chromium\src\. Then run the command `.\out\Default\chrome.exe --no-sandbox`. This will launch chromium. Browse gaming platform such as Google Stadia and play the game.
+  To run chromium, open the Windows PowerShell in administrator mode and change directory to C:\chromium\src\. Then run the command `.\out\Default\chrome.exe --no-sandbox`. This will launch chromium. Browse gaming platform such as Google Stadia and start the game say Far Cry 5.
 
 ### Launcher Setup
   Launcher runs various components of Decaf such as game bot, FFmpeg, wireshark to collect the data.
@@ -37,7 +37,7 @@ First step is to download or git clone decaf from github in your C directory. It
 
   Usage: python3 launcher.py <platform> <game> <total_runtime_min> <bot_runtime_min> <folder_name>
 
-  For example, if command `python3 launcher.py stadia fc5 10 8 testing` is run, it implies that fc5 will be played by game bot on stadia for 8 minutes and the it will launcher.py stop running after 10 minutes. The data collected will be stored in folder named _test_ which will be present at C:\decaf\dataset\stadia\test.
+  For example, if command `python3 launcher.py stadia fc5 10 8 testing` is run, it implies that fc5 will be played by game bot on stadia for 8 minutes and the it will launcher.py stop running after 10 minutes. The data collected will be stored in folder named _test_ which will be present at C:\decaf\dataset\stadia\test. The _bot_runtime_min_ can be less than or equal to _total_runtime_min_.
 
 ### Limitation
   Currently, DECAF can perform data collection for three game: Far Cry 5, Assassin's Creed Valhalla, and Crew/Crew2. It is tested for three platforms: Google Stadia, Amazon Luna, and Nvidia Geforce Now.
