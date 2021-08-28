@@ -32,9 +32,15 @@ Inside the C:\chromium\src\out\ that is already created, extract the downloaded 
 To run chromium, open the Windows PowerShell in administrator mode and change directory to C:\chromium\src\. Then run the command `.\out\Default\chrome.exe --no-sandbox`. This will launch chromium. Browse gaming platform such as Google Stadia and play the game.
 
 ### Launcher Setup
-Laucher runs various components of Decaf such as game bot, FFmpeg, wireshark to collect the data.
+Launcher runs various components of Decaf such as game bot, FFmpeg, wireshark to collect the data.
+Once the game is running in chromium, e.g., Far Cry 5 in Stadia, run the launcher.py to run to start the game bot and start collecting data. The usage is as follows:
 
+Usage: python3 launcher.py <platform> <game> <total_runtime_min> <bot_runtime_min> <folder_name>
 
+For example, if command `python3 launcher.py stadia fc5 10 8 testing` is run, it implies that fc5 will be played by game bot on stadia for 8 minutes and the it will launcher.py stop running after 10 minutes. The data collected will be stored in folder named _test_ which will be present at C:\decaf\dataset\stadia\test.
+  
+### Limitation
+Currently, DECAF can perform data collection for three game: Far Cry 5, Assassin's Creed Valhalla, and Crew/Crew2. It is tested for three platforms: Google Stadia, Amazon Luna, and Nvidia Geforce Now.
 
 
 
