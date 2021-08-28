@@ -3,7 +3,7 @@
     "tshark": "C:\\Program Files\\Wireshark\\",
     "dataset": "C:\\decaf\\dataset\\",
     "chromedata": "C:\\chromium_dataset\\",
-    "my_ip": "192.168.0.135",
+    "my_ip": "192.99.99.99",
     "files_to_move": {
         "tempdata": "C:\\decaf\\tempData\\",
         "frameBuffer2": "C:\\chrome_dataset\\frameBuffer2.txt",
