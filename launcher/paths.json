@@ -15,7 +15,7 @@
     },
     "ffmpeg": {
         "acv": "C:\\decaf\\ffmpegCmds\\acv.txt",
-        "crew": "C:\\decaf\\ffmpegCmds\\crew_new.txt",
+        "crew": "C:\\decaf\\ffmpegCmds\\crew.txt",
         "crew2": "C:\\decaf\\ffmpegCmds\\crew2.txt",
         "fc5": "C:\\decaf\\ffmpegCmds\\fc5.txt"
     }
