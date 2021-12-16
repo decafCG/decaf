@@ -2,10 +2,10 @@
 
 ## DISCLAIMER
 
-DECAF project is under review at an ACM conference. We only permit the use of DECAF to the ACM conference review committee. Other than that, as long as this disclaimer is present, any other use of DECAF is strictly prohibited.  
+**The tool upload is in progress...**
+Removal of disclaimer implies complete upload of tool.
 
 ## Setup
-**The tool upload is in progress...**
 
 DECAF is compatible with Windows 10 operating system
 
@@ -55,7 +55,8 @@ First step is to download or git clone decaf from github in your C directory. It
   
   
   
-
+## Frame Prediction
+To process the game recording, refer to readme.md in directory _predictor_. 
 
 
 
