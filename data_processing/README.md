@@ -56,3 +56,20 @@ directory  | platform  | game
 ./data/luna/crew_gameplay_1/  | luna  | crew  | 
 
 
+Now, run the `python3 data_processing.py` to processing chromium logs and game recordings in all the directories provided in `anytitle.csv`.
+
+### How `data_processing.py` Works
+
+This processing script has three key function that process the data. These functions are explained below.
+
+#### Chromium Processing
+To process the chromium log, there are two functions `process_videoReceiveStream_log` and `process_rtcStatsCollector_log`.
+
+`process_videoReceiveStream_log` parses the chromium log file (videoReceiveStream.txt) that contains the data from the 'videoReceiveStream' module of the chromium. It generates the two `.json` files: 1) `parsed_videoReceiveStream.json`, which contains the metrics in `.json` format so that analysis can be performed on them, and 2) `vrs_summary_stats.json`, which provide the summary statistics of the metrics in the log file.
+
+`process_rtcStatsCollector_log` parses the chromium log file (rtcStatsCollector.txt) that contains the data on network RTT. It generates three `.json` files: 1) `parsed_rtcStatsCollector.json`, which contains the metrics in `.json` format, 2) `current_rtt.json`, which contains rtt list ('rtts') and timestamp list ('ts') representing the RTT collected over duration of the experiment and summary statistics of RTT, and 3) `packet_loss_stats.json`, which contains the timestamp list ('ts') and packet losses ('packetsLost') representing packets lost over duration of experiment.
+
+
+#### Game Recording Processing
+
+
