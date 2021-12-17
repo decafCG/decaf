@@ -1,7 +1,4 @@
 import numpy as np 
-# from IPython.display import display
-# from IPython.display import Image as _Imgdis
-# from PIL import Image, ImageOps
 from time import time, sleep
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img, DirectoryIterator
 import tensorflow as tf
@@ -587,7 +584,7 @@ def generate_extracted_frames_timestamp_dictionary_multiprocessing(args):
 
 
 
-def process_game_recording(path, prediction_param_dict):	
+def process_game_recording(path, param_dict):	
 
 	print("Processing game video in: {}".format(path))
 
@@ -625,7 +622,7 @@ def process_game_recording(path, prediction_param_dict):
 		
 		# Crop video according to the game so that cropped images can be used in prediction
 		if not os.path.exists(path+"video_cropped.mkv"):
-			cmd = "ffmpeg -i "+path+video_orig+" -filter:v "+"'"+prediction_param_dict["video_crop_param"][game+"_"+platform]+"' "+path+"video_cropped.mkv"
+			cmd = "ffmpeg -i "+path+video_orig+" -filter:v "+"'"+param_dict["video_crop_param"][game+"_"+platform]+"' "+path+"video_cropped.mkv"
 			print("\nCroping video: ", cmd)
 			os.system(cmd)
 			print("Cropped")
@@ -673,7 +670,7 @@ def process_game_recording(path, prediction_param_dict):
 		if cancel_iteration == 0:
 			# Prediction on cropped frames
 			print("\nStarting prediction")
-			model = tf.keras.models.load_model(prediction_param_dict["models"][game])
+			model = tf.keras.models.load_model(param_dict["models"][game])
 			prediction(model, path, game)
 			print("\nPrediction complete")
 
@@ -735,19 +732,33 @@ def process_game_recording(path, prediction_param_dict):
 ######## END: GAME RECORDING PROCESSING #######
 #################################################
 
+def get_data_directories(path):
+	raw_data_path_list = open(path, "r").read().split("\n")[1:]
+
+	data_path_list = []
+
+	for entry in raw_data_path_list:
+		if len(entry) > 2:
+			entry = entry.split(",")
+			data_path_list.append((entry[0], entry[1], entry[2]))
+
+	return data_path_list
+
 
 if __name__ == "__main__":	
 
 	# Param and path dictionary
-	pp_path = "./prediction_paths_params.json"
-	prediction_param_dict = readDict(pp_path)
+	pp_path = "./params.json"
+	param_dict = readDict(pp_path)
 
-	data_path_list = [("./", "stadia", "fc5")]
+	data_path_list = get_data_directories(param_dict["data_directories"])
+
+	print(data_path_list)
 
 	for path in data_path_list:
 		process_videoReceiveStream_log(path[0])
 		process_rtcStatsCollector_log(path[0])
-		process_game_recording(path, prediction_param_dict)
+		process_game_recording(path, param_dict)
 
 
 	
