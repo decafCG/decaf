@@ -59,7 +59,7 @@ directory  | platform  | game
 
 Now, run the `python3 data_processing.py` to processing chromium logs and game recordings in all the directories provided in `anytitle.csv`.
 
-### How `data_processing.py` Works
+### How `data_processing.py` Works?
 
 This processing script has three key function that process the data. These functions are explained below.
 
