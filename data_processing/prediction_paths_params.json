@@ -1,0 +1,25 @@
+{
+	"video_crop_param": {
+		"acv_stadia": "crop=w=80:h=80:x=90:y=80",
+		"acv_luna": "crop=w=80:h=80:x=90:y=80",
+		"acv_gfn": "crop=w=80:h=80:x=90:y=80",
+		"fc5_stadia_old": "crop=w=190:h=150:x=90:y=100",
+		"fc5_stadia": "crop=w=190:h=190:x=0:y=60",
+		"fc5_luna": "crop=w=190:h=190:x=0:y=60",
+		"fc5_gfn": "crop=w=190:h=190:x=0:y=60",
+		"crew2_stadia": "crop=w=210:h=150:x=50:y=60",
+		"crew2_gfn": "crop=w=210:h=150:x=50:y=60",
+		"crew_luna": "crop=w=245:h=140:x=30:y=50"
+	},
+	"models" : {
+		"fc5": "../fc5/",		
+		"crew": "../crew",
+		"crew2": "../crew2",
+		"acv": "../acv"
+		
+	}
+}
+
+
+
+

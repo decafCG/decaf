@@ -56,9 +56,7 @@ First step is to download or git clone decaf from github in your C directory. It
   
   
 ## Data Processing
-To process chromium logs, refer to readme.md in directory _chromiumlog_processing_.
-
-To process the game recording, refer to readme.md in directory _predictor_. 
+To process chromium logs and game recording, refer to readme.md in directory _data_processing_.
 
 
 
