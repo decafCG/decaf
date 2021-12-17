@@ -1,9 +1,31 @@
 # DECAF: Dissecting Cloud Gaming Performance
 
+## Paper
+
 DECAF is a tool that systematically analyze and dissect the performance of cloud gaming platforms across different game genres and game platforms. DECAF is highly automated and requires minimum manual intervention. By applying DECAF, we measure the performance of three commercial cloud gaming platforms including Google Stadia, Amazon Luna, and Nvidia GeForceNow, and uncover a number of important findings.
 
 Our work is published ACM SIGMETRICS 2022. For details on DECAF capabilities and the interesting findings on the performance of three cloud gaming providers, read the paper available [here](https://dl.acm.org/doi/10.1145/3491043).
 
+*Citation:*
+```
+@article{10.1145/3491043,
+author = {Iqbal, Hassan and Khalid, Ayesha and Shahzad, Muhammad},
+title = {Dissecting Cloud Gaming Performance with DECAF},
+year = {2021},
+issue_date = {December 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {5},
+number = {3},
+url = {https://doi.org/10.1145/3491043},
+doi = {10.1145/3491043},
+journal = {Proc. ACM Meas. Anal. Comput. Syst.},
+month = {dec},
+articleno = {31},
+numpages = {27},
+keywords = {streaming bitrate, measurement, deep learning, network utilization, cloud gaming, game bot, performance evaluation, latency}
+}
+```
 
 
 ## DISCLAIMER
