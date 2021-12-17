@@ -17,7 +17,8 @@
 		"crew2": "../crew2",
 		"acv": "../acv"
 		
-	}
+	},
+	"data_directories": "./data_directories.csv"
 }
 
 
