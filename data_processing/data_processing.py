@@ -65,8 +65,6 @@ STREAMFILE = "videoReceiveStream.txt"
 RTCSTATS   = "rtcStatsCollector.txt"
 LOGFILE = "bot_log.csv"
 
-# THREEMINUTESMILI = 180.000
-# NINTEENMINUTESMILI = 1140.000
 
 
 def process_videoReceiveStream_log(path):
@@ -122,8 +120,6 @@ def process_videoReceiveStream_log(path):
 
 			if log_start > 0 and log_start <= ts_mili and log_end >= ts_mili:
 				process = True
-			# elif log_start == 0 and ts_mili >= ts_start+THREEMINUTESMILI and ts_mili <= ts_start+THREEMINUTESMILI+NINTEENMINUTESMILI and exp_type == "NE":
-			# 	process = True
 
 			if process == True:
 				# print(ts_mili)
