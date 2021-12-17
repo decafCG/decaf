@@ -27,12 +27,6 @@ keywords = {streaming bitrate, measurement, deep learning, network utilization, 
 }
 ```
 
-
-## DISCLAIMER
-
-**The tool upload is in progress...**
-Removal of disclaimer implies complete upload of tool.
-
 ## Setup
 
 For data collection, DECAF is compatible with Windows operating system. 
