@@ -43,7 +43,7 @@ First, lets set paths in _params.json_ as follows:
 	"acv": "../acv"		
 }
 ```
-replace the complete directory paths of the respective game models. For example, replace "../fc5/" with "/home/yourdirectory/models/fc5/"
+replace the complete directory paths of the respective game models. For example, replace "../fc5/" with "/home/yourdirectory/models/fc5/".
 3. Create `anytitle.csv` file and place its path as value of key `"data_directories"`, in _params.json_.
 
 The purpose of `anytitle.csv` is to provide the directory paths of all the collected data in one place. The script `data_processing.py` will read all the paths from this file and process all of them in one execution. Fill `anytitle.csv` with the directory paths of data collected for each game. This file has three columns _directory,platform,game_. The entries in this file should look like as follows:
@@ -62,8 +62,8 @@ Now, run the `python3 data_processing.py` to processing chromium logs and game r
 
 This processing script has three key function that process the data. These functions are explained below.
 
-#### Chromium Processing
-To process the chromium log, there are two functions `process_videoReceiveStream_log` and `process_rtcStatsCollector_log`.
+#### Chromium Log Processing
+To process the chromium logs, there are two functions `process_videoReceiveStream_log` and `process_rtcStatsCollector_log`.
 
 `process_videoReceiveStream_log` parses the chromium log file (videoReceiveStream.txt) that contains the data from the 'videoReceiveStream' module of the chromium. It generates the two `.json` files: 1) `parsed_videoReceiveStream.json`, which contains the metrics in `.json` format so that analysis can be performed on them, and 2) `vrs_summary_stats.json`, which provide the summary statistics of the metrics in the log file.
 
