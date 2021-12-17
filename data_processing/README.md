@@ -44,6 +44,7 @@ First, lets set paths in _params.json_ as follows:
 }
 ```
 replace the complete directory paths of the respective game models. For example, replace "../fc5/" with "/home/yourdirectory/models/fc5/".
+
 3. Create `anytitle.csv` file and place its path as value of key `"data_directories"`, in _params.json_.
 
 The purpose of `anytitle.csv` is to provide the directory paths of all the collected data in one place. The script `data_processing.py` will read all the paths from this file and process all of them in one execution. Fill `anytitle.csv` with the directory paths of data collected for each game. This file has three columns _directory,platform,game_. The entries in this file should look like as follows:
@@ -72,4 +73,8 @@ To process the chromium logs, there are two functions `process_videoReceiveStrea
 
 #### Game Recording Processing
 
-
+Function `process_game_recording` processes the game recording. It perform the following operations:
+1. Crop the video according to "video_crop_param" of the respective games that are provided in _param.json_.
+2. Convert cropped and original video into frames.
+3. Run machine learning models on cropped frames and identify the action frames. Then, it generates  `predicted_files.json` that contains file names of all the action frames.
+4. The filenames in `predicted_files.json` are then used to fetch the uncropped frame and decode the appended timestamp from it. These timestamps are saved in `frame_timestamps.json`, which can be used along with the `bot_log.csv` to find game delay. The process is described in the [paper](https://dl.acm.org/doi/10.1145/3491043).
