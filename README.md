@@ -1,5 +1,11 @@
 # DECAF: Dissecting Cloud Gaming Performance
 
+DECAF is a tool that systematically analyze and dissect the performance of cloud gaming platforms across different game genres and game platforms. DECAF is highly automated and requires minimum manual intervention. By applying DECAF, we measure the performance of three commercial cloud gaming platforms including Google Stadia, Amazon Luna, and Nvidia GeForceNow, and uncover a number of important findings.
+
+Our work is published ACM SIGMETRICS 2022. For details on DECAF capabilities and the interesting findings on the performance of three cloud gaming providers, read the paper available [here](https://dl.acm.org/doi/10.1145/3491043).
+
+
+
 ## DISCLAIMER
 
 **The tool upload is in progress...**
@@ -7,7 +13,7 @@ Removal of disclaimer implies complete upload of tool.
 
 ## Setup
 
-DECAF is compatible with Windows 10 operating system
+For data collection, DECAF is compatible with Windows operating system. 
 
 First step is to download or git clone decaf from github in your C directory. It should look like C:\decaf
 

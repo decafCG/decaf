@@ -46,11 +46,12 @@ First, lets set paths in _params.json_ as follows:
 replace the complete directory paths of the respective game models. For example, replace "../fc5/" with "/home/yourdirectory/models/fc5/"
 3. Create `anytitle.csv` file and place its path as value of key `"data_directories"`, in _params.json_.
 
-Then, fill `anytitle.csv` that is created with the directory paths of data collected for each game. This file has three columns _directory,platform,game_. The entries in this file should look like as follows:
+The purpose of `anytitle.csv` is to provide the directory paths of all the collected data in one place. The script `data_processing.py` will read all the paths from this file and process all of them in one execution. Fill `anytitle.csv` with the directory paths of data collected for each game. This file has three columns _directory,platform,game_. The entries in this file should look like as follows:
 
 directory  | platform  | game
 ------------- | ------------- | ------------- | 
 ./data/stadia/fc5_gameplay_1/  | stadia  | fc5  | 
+./data/stadia/fc5_gameplay_2/  | stadia  | fc5  | 
 ./data/stadia/acv_gameplay_1/  | stadia  | acv  | 
 ./data/luna/crew_gameplay_1/  | luna  | crew  | 
 
